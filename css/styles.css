@@ -1,0 +1,56 @@
+body {
+    background-image: url("img/bckgnd.png");
+    background-color: black;
+}
+
+nav {
+    color: rgb(227, 248, 248);
+    text-decoration: none;
+    text-shadow: rgb(1, 93, 62);
+}
+
+h1,
+h2 {
+    color: rgb(235, 219, 146);
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+h2:hover {
+    color: rgb(176, 140, 34);
+}
+
+h5,
+h3  {
+    color: rgb(176, 140, 34);
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+p {
+    color: rgb(235, 219, 146);
+}
+
+.carousel-item {
+    height: 60%;
+}
+
+.carousel-caption {
+    color: rgb(235, 219, 146);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 1.5rem;
+}
+
+.icon {
+    color: rgb(176, 140, 34);
+}
+.logo {
+    box-shadow: 25px 25px 50 px 0 black inset, -25px -25px 50px 0 black inset;
+    border-radius: 110px;
+}
+
+.about-pic{
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    box-shadow: -50px -50px -50px 0 black inset;
+}
