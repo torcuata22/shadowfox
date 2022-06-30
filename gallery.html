@@ -13,38 +13,38 @@
         <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css"/>
     
         <title>Shadow Fox Witchery</title>
-    </head>
-    
-    <body>
-    
+
        <!-- Additional CSS must be placed after Bootstrap CSS -->
-       <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-       <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
        <link rel="preconnect" href="https://fonts.googleapis.com"> 
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;500&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="css/styles.css" />
-       <title>Shadow Fow Witchery</title>
+       
     </head>
-    <body>
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shadowNavbar">
-                    <span class="navbar-toggler-icon"></span>   
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="shadowNavbar">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item active"><a class="nav-link" href="index.html"><h2>Home</h2></a></li>
-                        <li class="nav-item"><a  class="nav-link" href="aboutme.html"><h2>About Me</h2></a></li>
-                        <li class="nav-item"><a class="navbar-brand" href="#"><img src="img/logo.jpg" height="450" width="450" class="logo"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html"><h2>Gallery</h2></a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html"><h2>Contact Me</h2></a></li>
-                    </ul>
-                </div>
+   
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shadowNavbar">
+                <span class="navbar-toggler-icon"></span>   
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="shadowNavbar">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><h2>Home</h2></a></li>
+                    <li class="nav-item"><a  class="nav-link" href="aboutme.html"><h2>About Me</h2></a></li>
+                    <li class="nav-item" id="desktop"><a class="navbar-brand" href="#"><img src="img/logo.jpg" class="logo img-fluid"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><h2>Gallery</h2></a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><h2>Contact Me</h2></a></li>
+                </ul>
             </div>
         </div>
-        </nav>
+    </div>
+    </nav>
+
         <div class="container">
+          <div class="row" id="mobile">
+            <div class="col">
+                <img src="img/logo.jpg" height="450" width="450" class="logo">
+            </div>
+        </div>
             <div class="row mt-5">
                 <div class="col">
                     <h1>My Gallery</h1>
@@ -170,7 +170,7 @@
                
                     <a href="#"><i class="fa fa-home fa-lg icon"></i></a>
                     <a href="aboutme.html"><i class="fa fa-info fa-lg icon"></i></a>
-                    <a href="https://www.etsy.com/shop/ShadowFoxWitchery?"><i class="fas fa-shopping-cart icon"></i></a>
+                    <a href="https://www.etsy.com/shop/ShadowFoxWitchery?"><i class="fa fa-shopping-cart icon"></i></a>
                     <a href="contactus.html"><i class="fa fa-address-card fa-lg icon"></i></a>
                
             </div>
@@ -187,6 +187,14 @@
 </div>
 </div>
 </footer>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $('[data-toggle = "tooltip"]').tooltip()
+    })
+</script>
 <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
 <script>
   new Splide( '.splide', {
@@ -194,9 +202,11 @@
     perPage: 3,
     breakpoints: {
       640: { //for mobile change to 500, 1 per page; test for 800px for the rest (resize browser)
-        perPage: 2,
-      },
-    }
+        perPage: 2, 
+      }
+    }, 
+    autoplay:true
+    //to move one at a time: perMove: 1, (add comma after autoplay:true)
   } ).mount();
 </script>
 </body>

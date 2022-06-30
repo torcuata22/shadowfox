@@ -4,6 +4,7 @@
         <!-- Required meta tags always come first -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="" > <!--SEO goes here-->
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />          
         <!-- Additional CSS must be placed after Bootstrap CSS -->
@@ -25,7 +26,7 @@
             <ul class="navbar-nav align-items-center">
                 <li class="nav-item active"><a class="nav-link" href="#"><h2>Home</h2></a></li>
                 <li class="nav-item"><a  class="nav-link" href="aboutme.html"><h2>About Me</h2></a></li>
-                <li class="nav-item"><a class="navbar-brand" href="#"><img src="img/logo.jpg" height="450" width="450" class="logo"></a></li>
+                <li class="nav-item" id="desktop"><a class="navbar-brand" href="#"><img src="img/logo.jpg" class="logo img-fluid"></a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html"><h2>Gallery</h2></a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html"><h2>Contact Me</h2></a></li>
             </ul>
@@ -37,9 +38,13 @@
 
 <div class="container">
     <br><br><br>
+    <div class="row" id="mobile">
+        <div class="col">
+            <img src="img/logo.jpg" height="450" width="450" class="logo">
+        </div>
+    </div>
     <div class="row row-content">
-        <div class="col col-3"></div>
-        <div class="col col-sm-6 justify content center">
+        <div class="col col-sm-6 justify-content-center mx-auto">
             <h1>Welcome to Shadow Fox Witchery</h1>
         </div>
     </div>
@@ -96,8 +101,6 @@
         </div>
     </div>
         
-    
-    
     <footer class="site-footer">
         <div class="container">
             <div class="row row-content align-items-center">             
@@ -106,7 +109,7 @@
                    
                         <a href="#"><i class="fa fa-home fa-lg icon"></i></a>
                         <a href="aboutme.html"><i class="fa fa-info fa-lg icon"></i></a>
-                        <a href="https://www.etsy.com/shop/ShadowFoxWitchery?"><i class="fas fa-shopping-cart icon"></i></a>
+                        <a href="https://www.etsy.com/shop/ShadowFoxWitchery?"><i class="fa fa-shopping-cart icon"></i></a>
                         <a href="contactus.html"><i class="fa fa-address-card fa-lg icon"></i></a>
                    
                 </div>

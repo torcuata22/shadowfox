@@ -1,6 +1,7 @@
 body {
-    background-image: url("img/bckgnd.png");
-    background-color: black;
+    background-image: url("../img/bckgnd.png");
+    background-size: cover;
+    
 }
 
 nav {
@@ -46,6 +47,8 @@ p {
 .logo {
     box-shadow: 25px 25px 50 px 0 black inset, -25px -25px 50px 0 black inset;
     border-radius: 110px;
+    max-width: 450px;
+    width: 100%;
 }
 
 .about-pic{
@@ -53,4 +56,28 @@ p {
     height: 250px;
     border-radius: 250px;
     box-shadow: -50px -50px -50px 0 black inset;
+}
+
+footer a,
+footer .icon {
+ color:rgb(235, 219, 146);
+}
+
+footer a:hover,
+footer .icon:hover {
+    color:rgb(176, 140, 34);
+}
+
+
+
+@media (min-width:576px){
+#mobile {
+    display: none;
+}
+}
+
+@media (max-width:576px){
+   #desktop {
+    display: none;
+    }
 }
